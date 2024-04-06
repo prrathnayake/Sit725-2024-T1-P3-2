@@ -23,14 +23,15 @@ const clickMe = () => {
   alert("Thanks for clicking me. Hope you have a nice day!");
 };
 
-const submitForm = () => {
-  let formData = {};
-  formData.first_name = $("#first_name").val();
-  formData.last_name = $("#last_name").val();
-  formData.password = $("#password").val();
-  formData.email = $("#email").val();
-  console.log("Form Data Submitted: ", formData);
-};
+// const submitForm = () => {
+//   let formData = {};
+//   formData.first_name = $("#first_name").val();
+//   formData.last_name = $("#last_name").val();
+//   formData.password = $("#password").val();
+//   formData.email = $("#email").val();
+//   console.log("Form Data Submitted: ", formData);
+//   addCards(formData.first_name, formData.last_name, formData.email, formData.password);
+// };
 
 const addCards = (items) => {
   items.forEach((item) => {
@@ -59,7 +60,7 @@ const addCards = (items) => {
 
 $(document).ready(function () {
   $("#formSubmit").click(() => {
-    submitForm();
+    // submitForm();
   });
 
   addCards(cardList);
